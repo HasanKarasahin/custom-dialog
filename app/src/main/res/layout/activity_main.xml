@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/tvReturn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RETURN"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnShowDialog"
@@ -15,4 +28,34 @@
         android:text="Show Dialog"
         android:textSize="18sp" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/btnShowDialog1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="btnShowDialog1Click"
+        android:text="Show Dialog1"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnShowDialogSingleChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="btnShowDialogSingleChoiceClick"
+        android:text="Single Chooice"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnShowDialogMultiChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="btnShowDialogMultiChoiceClick"
+        android:text="Multi Chooice"
+        android:textSize="18sp" />
+
+</LinearLayout>
